@@ -1,0 +1,77 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |-
+    Cette partie du tutoriel va vous expliquer pas à pas comment créer une tâche sur INGInious.
+
+    1) Vous devez avoir un compte INGInious, pour ce faire, remplissez le formulaire pour **s'enregistrer** sur cette page :
+
+    .. container:: text-center
+
+        .. image:: 3-maze-fr/register.JPG
+
+    2) Avec votre compte, vous devez être connecté, vous pouvez le faire en appuyant sur **Se connecter** puis remplissez ce formulaire:
+
+    .. container:: text-center
+
+        .. image:: 3-maze-fr/sign_in.JPG
+
+    3) Vous devez avoir un cours, si vous n'avez pas encore demandé à ce qu'il soit créé pour vous, veuillez contacter cette adresse : contact@inginious.org
+    4) Lorsque vous êtes connecté et que vous avez un cours, vous devez aller sur cette page https://inginious.org/mycourses. Votre cours devrait apparaître ici.
+
+    .. container:: text-center
+
+        .. image:: 3-maze-fr/my_course.JPG
+
+
+    5) Cliquez sur le nom du cours, il devrait être vide.
+    6) Cliquez sur "Administration du cours".
+
+    .. container:: text-center
+
+        .. image:: 3-maze-fr/course_admin.JPG
+
+
+
+    7) Vous pouvez changer le nom de votre cours ici, lui donner une description et l'accessibilité si vous voulez que les gens voient votre cours, il est par défaut caché à tout le monde sauf pour vous.
+    8) Cliquez sur **"Tâches"**.
+
+    .. container:: text-center
+
+        .. image:: 3-maze-fr/tasks_button.JPG
+
+
+    9) Cliquez sur "Ajouter une section" **(1)** et donnez-lui un nom **(2)**.
+    10) Cliquez sur les trois lignes **(3)** puis cliquez sur "Ajouter des exercices "**(4)**.
+
+    .. container:: text-center
+
+        .. image:: 3-maze-fr/new_section.JPG
+
+    11) Donnez un ID à votre nouvel exercice puis cliquez sur "Créer un nouvel exercice".
+
+    .. container:: text-center
+
+        .. image:: 3-maze-fr/add_task.JPG
+
+    12) Cliquez sur "Enregistrer les modifications".
+    13) Vous avez créé une tâche avec succès ! Passez à l'étape suivante de ce tutoriel pour apprendre comment faire de cette tâche une tâche de labyrinthe.
+
+
+    TODO changez cette partie en fonction du développement de l'accès au webdav
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 3 - Tutoriel Maze - Créer un exercice - administrateur
+network_grading: false
+problems: {}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

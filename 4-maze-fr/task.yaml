@@ -1,0 +1,82 @@
+accessible: true
+author: Florian Thuin
+categories: []
+contact_url: ''
+context: |-
+    Une fois votre tâche créée, vous pouvez utiliser les fichiers que vous avez téléchargés pour créer une tâche Maze.
+
+    1) Décompressez les fichiers.
+    2) Placez le dossier **$common** dans le dossier racine de votre cours (il contient les images nécessaires au labyrinthe). Chemin : **"VotreCours/$common "**.
+    3) Mettez tous les fichiers restants de la tâche téléchargée dans votre dossier de tâche (il devrait remplacer votre fichier task.yaml). Chemin : **"VotreCours/VotreExercice/"**.
+    4) Relancez la page et voilà.
+
+    Félicitations, vous êtes maintenant l'heureux propriétaire d'une tâche blockly labyrinthe !
+
+    Vous pouvez modifier la tâche pour créer de nombreux types d'exercices de labyrinthe, le seul fichier que vous devez modifier est le fichier "maze.config.json" (expliqué dans la partie 5 de ce tutoriel).
+
+    Cette tâche devrait être entièrement fonctionnelle à ce stade. La **boite à outils** comporte de nombreux types de blocs déjà définis, vous pouvez les modifier soit graphiquement, soit dans le fichier XML, vous trouverez plus d'informations à ce sujet dans la partie 7 de ce tutoriel.
+
+    Dans la prochaine partie de ce tutoriel, vous découvrirez divers éléments utiles de cette interface.
+environment_id: default
+environment_parameters:
+    limits:
+        time: '30'
+        hard_time: ''
+        memory: '100'
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 4 - Tutoriel Maze - Votre première tâche - administrateur
+network_grading: false
+order: 2
+problems:
+    code:
+        type: blockly
+        name: ''
+        header: ''
+        options:
+            visual:
+                position: left
+            maxBlocks: '9'
+            speed: '60'
+            trashcan: true
+            toolboxPosition: start
+            media: /plugins/blockly/static/blockly/media/
+            css: true
+            grid:
+                spacing: 20
+                length: 3
+                colour: '#ccc'
+                snap: true
+            zoom:
+                controls: true
+                startScale: 1.0
+                maxScale: 3.0
+                minScale: 0.3
+                scaleSpeed: 1.2
+                wheel: false
+            oneBasedIndex: true
+            scrollbars: true
+            sounds: true
+        files:
+        - ../$common/maze.js
+        - ../$common/maze_interpreter.js
+        blocks_files:
+        - blocks.js
+        - ../$common/common_blocks.js
+        toolbox: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+                <block type="maze_moveForward"></block>
+              <block type="maze_turn"><field name="DIR">turnLeft</field></block>
+              <block type="maze_turn"><field name="DIR">turnRight</field></block>
+            </xml>
+        workspace: <xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks"
+            style="display:none"></xml>
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

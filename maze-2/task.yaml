@@ -1,0 +1,85 @@
+accessible: true
+author: Florian Thuin
+categories: []
+contact_url: ''
+context: |-
+    TODO DEPEND ON WEBDAV either keep this task as an example or split the tutorial in two steps based on how the webdav is handled
+
+
+    Once your task is created, you can use the files you downloaded to make a Maze task.
+
+    1) Unzip the files.
+    2) Put the **$common** folder in the root folder of your course (it contains the images necessary for the maze). Path : **"YourCourse/$common"**.
+    3) Put all the remaining files from the downloaded task inside your task folder (it should replace your task.yaml file). Path : **"YourCourse/YourTask/"**.
+    4) Hit refresh and voila.
+
+    Congratulations, you are now the proud owner of a blockly maze task !
+
+    You can modify the task to make many types of maze exercises, the only file you should need to modify is the "maze.config.json" (explained in part 5 of this tutorial).
+
+    This task should be fully functional at this stage. The **toolbox** has many types of blocks already set, you can modify this either graphically or in the XML file, more information can be found on the part 7 of this tutorial.
+
+    In the next part of this tutorial, you will learn about various usefull elements of this interface.
+environment_id: default
+environment_parameters:
+    limits:
+        time: '30'
+        hard_time: ''
+        memory: '100'
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 4 - Maze tutorial - Your first maze task - admin
+network_grading: false
+order: 2
+problems:
+    code:
+        type: blockly
+        name: ''
+        header: ''
+        options:
+            visual:
+                position: left
+            maxBlocks: '9'
+            speed: '60'
+            trashcan: true
+            toolboxPosition: start
+            media: /plugins/blockly/static/blockly/media/
+            css: true
+            grid:
+                spacing: 20
+                length: 3
+                colour: '#ccc'
+                snap: true
+            zoom:
+                controls: true
+                startScale: 1.0
+                maxScale: 3.0
+                minScale: 0.3
+                scaleSpeed: 1.2
+                wheel: false
+            oneBasedIndex: true
+            scrollbars: true
+            sounds: true
+        files:
+        - ../$common/maze.js
+        - ../$common/maze_interpreter.js
+        blocks_files:
+        - blocks.js
+        - ../$common/common_blocks.js
+        toolbox: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+                <block type="maze_moveForward"></block>
+              <block type="maze_turn"><field name="DIR">turnLeft</field></block>
+              <block type="maze_turn"><field name="DIR">turnRight</field></block>
+            </xml>
+        workspace: <xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks"
+            style="display:none"></xml>
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

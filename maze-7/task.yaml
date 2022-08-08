@@ -1,0 +1,35 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |-
+    As briefly explained before, pressing **"Run code"** only executes the code so that the student can see what the character does accordingly on the map.
+
+    To grade the code written by the student, the student needs to press **"submit"** at the very bottom of the task. His code is then sent to a script testing the code, here a Python file called **"maze.tpl.py"** that sends a message to a **"run"** file, then the **"run"** file will send a message to the student. Those files should already be fully functional in the basic tasks you downloaded and you should not have to modify them.
+
+    When a student submit his code, the correction will test each map individually (in order). If they all pass, the student succeeded and he will receive a positive feedback. In our example, it will look like this ( you can have many maps to test the student's solution, more informations on this topic can be found on step 5 of this tutorial):
+
+    .. container:: text-center
+
+        .. image:: maze-7/solved.JPG
+
+    If some instance failed, a negative feedback is given and the failed instance is displayed :
+
+    .. container:: text-center
+
+        .. image:: maze-7/failed.JPG
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 2 - Maze tutorial - Submitting and Grading
+network_grading: false
+problems: {}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

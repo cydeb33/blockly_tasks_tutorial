@@ -1,0 +1,36 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |-
+    You can add as many maps as you want in the **"layout"** element, as shown in the image below.
+
+    Our two maps will, of course, not be displayed at the same time. They are there to ensure that the student doesn’t hardcode the solution to the map he sees. You can add as many maps as you want, with a minimum of one.
+
+    When a student submit his code, the correction will test each map individually (in order). If they all pass, the student succeeded.
+
+    .. container:: text-center
+
+        .. image:: maze-6/double_layout.JPG
+
+
+    In our example, it will look like this (with only the left map being shown):
+
+    .. container:: text-center
+
+        .. image:: maze-6/multiple_maze.JPG
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 6 - Maze tutorial - Multiple layouts
+network_grading: false
+problems: {}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

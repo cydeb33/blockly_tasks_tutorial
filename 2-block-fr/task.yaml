@@ -1,0 +1,35 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |-
+    Comme expliqué précédemment, le fait d'appuyer sur **"Exécuter le code "** ne fait qu'exécuter le code afin que l'étudiant puisse voir ce que le personnage fait en conséquence.
+
+    Pour évaluer le code écrit par l'étudiant, ce dernier doit appuyer sur **"Soumettre"**. Son code est ensuite envoyé à un script testant le code, ici un fichier Python appelé **"student.py "** qui envoie un message à un fichier **"run "**, puis le fichier **"run "** enverra un message à l'étudiant. Ces fichiers devraient déjà être entièrement fonctionnels dans les tâches de base que vous avez téléchargées et vous ne devriez pas avoir à les modifier.
+
+    Lorsqu'un étudiant soumet son code, la correction testera chaque carte individuellement (dans l'ordre). Si elles passent toutes, l'étudiant a réussi et il recevra un feedback positif. Dans notre exemple, cela ressemblera à ceci ( vous pouvez définir plusieurs cartes pour tester la solution de l'élève, vous trouverez plus d'informations sur ce point à l'étape 5 de ce tutoriel):
+
+    .. container:: text-center
+
+        .. image:: 2-block-fr/passed_fr.JPG
+
+    Si une instance a échoué, un feedback négatif est donné et l'instance qui a échoué est affichée :
+
+    .. container:: text-center
+
+        .. image:: 2-block-fr/error_fr.JPG
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 2 - Tutoriel Blocs - Soumettre et correction
+network_grading: false
+problems: {}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

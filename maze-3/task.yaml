@@ -1,0 +1,56 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |+
+    TODO create basic downloadable maze task (avec plein de blocs dans la toolbox)
+
+    Welcome to the Blockly task tutorial.
+
+    This tutorial will walk you through the informations necessary to create blockly tasks.
+
+    In order to have your own course, please contact : contact@inginious.org
+
+    Let's begin this tutorial by going over what your students are going to be using.
+
+    All the blockly tasks that require a visual map are set like in the image below, that represents a basic Maze task.
+
+    * On top of the image you can see the title and the context of the task.
+    * **MAP** : The visual blockly tasks require a **map**, the goal of the student is to make the character go from a point A to a point B, following a certain path while avoiding the obstacles.
+    * **TOOLBOX** : To complete the task, the student is given a set of blocks, present in the **toolbox**, the student can drag and drop blocks from the **toolbox** to the **workspace**. When setting up the task as the teacher, you decide what blocs are available in the **toolbox**.
+    * **WORKSPACE** : The **workspace** is where the blocks are set to solve the task. When setting up the task as the teacher, you decide what blocs are available in the **workspace**.
+    * 1. The **Run code** button allows the student to execute the blocks present in the **workspace**. The character will move accordingly to the blocks. To execute the code multiple times, the student needs to press it again when it says **"Restart"** and then **"Run code"** again (Like in the bottom image).
+    * 2. The three buttons **"Blocks / Split / Text"** allow the student to show/hide an interface, showing the equivalent Python code of the blocks currently present in the workspace. The **"Split"** button shows the interface on the right. By default it is set to **"Blocks"**, which only shows the blocks. The interface showing the code is not editable.
+    * 3. The interface showing the Python code equivalent of the blocks in the workspace.
+    * 4. In order to test his solution, the student needs to press **Submit**. Pressing **Run code** only shows on the map the effect of the blocks. The **Submit** button will trigger the grading scripts, showing the feedback you decided to set based on the answer of the student (the grading system is covered in more detail later in this tutorial).
+    * 5. The submission history on the bottom left allows the student to retrieve his previous attempts and re-run them.
+    * 6. This shows a few information about the task and the student's progress.
+
+    .. container:: text-center
+
+        .. image:: maze-3/inginious_interface_user.JPG
+
+    You can see the **"Restart"** button below
+
+    .. container:: text-center
+
+        .. image:: maze-3/restart.JPG
+
+
+
+
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 1 - Maze tutorial - Structure of the interface - Student
+network_grading: false
+problems: {}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

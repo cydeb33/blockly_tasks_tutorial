@@ -1,0 +1,36 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |-
+    Si vous souhaitez ajouter ou supprimer des blocs de votre tâche, vous pouvez le faire en utilisant soit l'interface utilisateur graphique, soit le fichier XML. Les blocs spécifiques à un labyrinthe se trouvent dans la catégorie Bibliothèque de blocs, et sont définis dans le fichier **"blocks.js "** (sous VotreTâche/public/), qui ne doit pas être modifié, sauf si vous souhaitez y ajouter de nouveaux blocs personnalisés.
+
+    Pour créer un nouveau bloc personnalisé, veuillez vous référer à ce tutoriel : https://jobblockly.readthedocs.io/en/latest/BaseBlockly.html#example-create-a-custom-block-if-else.
+
+    **Ci-dessous vous avez l'interface XML où vous pouvez modifier les blocs présents dans votre tâche (remarquez qu'il y a deux fichiers séparés, un pour la boîte à outils et un pour l'espace de travail):**.
+
+    .. container:: text-center
+
+        .. image:: 7-maze-fr/xml.JPG
+
+    **Ci-dessous vous avez l'interface graphique où vous pouvez modifier les blocs présents dans votre tâche (Le fichier XML est automatiquement mis à jour lorsque vous modifiez l'interface graphique) :**
+
+    .. container:: text-center
+
+        .. image:: 7-maze-fr/graphically.JPG
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 7 - Tutoriel Maze - boîte à outils et espace de travail - Comment modifier des
+    blocs
+network_grading: false
+problems: {}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

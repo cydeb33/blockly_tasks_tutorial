@@ -1,0 +1,36 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |-
+    Vous pouvez ajouter autant de cartes que vous le souhaitez dans l'élément **"layout "**, comme le montre l'image ci-dessous.
+
+    Nos deux cartes ne seront bien entendu, pas affichées en même temps. Elles sont là pour s'assurer que l'étudiant ne code pas en dur la solution de la carte qu'il voit. Vous pouvez ajouter autant de cartes que vous le souhaitez, avec au minimum une carte.
+
+    Lorsqu'un étudiant soumet son code, la correction testera chaque carte individuellement (dans l'ordre). Si elles passent toutes les tests, l'étudiant a réussi.
+
+    .. container:: text-center
+
+        .. image:: maze-6/double_layout.JPG
+
+
+    Dans notre exemple, cela ressemblera à ceci (avec seulement la carte de gauche affichée) :
+
+    .. container:: text-center
+
+        .. image:: maze-6/multiple_maze.JPG
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 6 - Tutoriel Maze - Plusieurs cartes
+network_grading: false
+problems: {}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

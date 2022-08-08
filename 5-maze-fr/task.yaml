@@ -1,0 +1,55 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |
+    Vous pouvez définir votre propre carte pour chaque exercice, pour cela il vous suffit de modifier le contenu du maze.config.json qui se trouve dans **"VotreTache/public/maze.config.json".**
+
+    L'image ci-dessous montre le contenu du maze.config.json.
+
+    .. container:: text-center
+
+        .. image:: maze-5/maze_config.JPG
+
+    Ce maze.config.json donne la carte montrée ci-dessous :
+
+    .. container:: text-center
+
+        .. image:: maze-5/maze_config_example.JPG
+
+    Si vous souhaitez modifier la disposition de la carte, comme créer de nouveaux chemins, ajouter des obstacles, etc. Vous devez modifier l'élément **"layout" (numéro 1 sur l'image)**. **"layout "** est un tableau de tableaux. Chaque tableau représente une carte que l'élève doit résoudre dans cet exercice. La signification des nombres trouvés dans le tableau se trouve dans l'élément **"squareType" (numéro 3 sur l'image)** que vous ne devriez pas avoir à modifier sauf si vous ajoutez de nouveaux types d'éléments au labyrinthe. Nous allons les passer en revue plus en détail ici :
+
+
+
+    * **0** est une tuile vide (qui peut être peuplée aléatoirement avec un décor non interactif) où le personnage ne peut pas aller.
+
+    * **1** est une tuile ouverte où le personnage peut marcher.
+
+    * **2** est la tuile où le personnage commence le jeu.
+
+    * **3** est l'objectif à atteindre pour gagner la partie.
+
+    * **4** est une tuile avec un obstacle qui tuera le personnage s'il marche dessus.
+
+    * **5** est une valeur spéciale utilisée si vous voulez que les tuiles de départ et d'arrivée soient les mêmes.
+
+    Si vous souhaitez augmenter ou diminuer la vitesse d'animation du personnage, mettez à jour l'élément **"animationSpeed "** **(numéro 2 sur l'image)**.
+
+    Si vous souhaitez modifier l'orientation du personnage au début de la tâche, mettez à jour l'élément **"startDirection "** **(numéro 4 sur l'image)**. Le personnage est actuellement orienté vers le SUD, vous pouvez mettre OUEST, NORD ou EST.
+
+    Plus de détails sur les cartes sont donnés dans le prochain tutoriel.
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 5 - Tutoriel Maze - Paramètres de la carte
+network_grading: false
+problems: {}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

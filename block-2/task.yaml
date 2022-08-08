@@ -1,0 +1,35 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |-
+    As explained earlier, pressing **"Run Code "** only runs the code so that the student can see what the character does as a result.
+
+    To evaluate the code the student has written, the student must press **"Submit "**. Their code is then sent to a script that tests the code, in this case a Python file called **"student.py "** that sends a message to a **"run "** file, then the **"run "** file will send a message to the student. These files should already be fully functional in the basic tasks you downloaded and you should not have to modify them.
+
+    When a student submits their code, the fix will test if the student's code matches the solution. If the tests are all correct the student has passed and will receive positive feedback. In our example it will look like this:
+
+    .. container:: text-center
+
+        .. image:: block-2/passed_en.JPG
+
+    If an instance has failed, negative feedback is given and the failed instance is displayed:
+
+    .. container:: text-center
+
+        .. image:: block-2/error_en.JPG
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 2 - Block tutorial - Submitting and Grading
+network_grading: false
+problems: {}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
